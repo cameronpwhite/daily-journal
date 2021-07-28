@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Daily Journal</title>
+</head>
+<body>
+    <header class="body__header">
+        <section class="header__logo"></section>
+    </header>
+    <main id="container">
+        <script type="module" src="scripts/main.js">
+        </script>
+        <h2>Daily Journal</h2>
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryDate">Date</label>
+                <input type="date" name="entryDate" class="entryForm__date">
+            </fieldset>
+        </form>
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryConcept">Concepts covered</label>
+                <input type="text" name="entryConcept" class="entryForm__concept">
+            </fieldset>
+        </form>
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryText">Journal entry</label>
+                <textarea name="entryText" class="entryForm__text" rows="10" cols="30">Enter text here.</textarea>
+            </fieldset>
+        </form>
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryMood">Mood for the Day</label>
+                <select id="moods" name="entryMood" class="entryForm__mood">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                </select>
+            </fieldset>
+        </form>
+        <button>Record Journal Entry</button>
+    <article id="entries"></article>
+    </main>
+    <footer>
+        <section></section>
+    </footer>             
+    
+</body>
+</html>
